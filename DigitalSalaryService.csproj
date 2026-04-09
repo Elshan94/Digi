@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>feb811ce-f2ce-4531-ba5e-7d0ef1a92510</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>.</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="Ardalis.SmartEnum" Version="8.2.0" />
+	  <PackageReference Include="DocX" Version="5.0.0" />
+	  <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.6" />
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+	  <PackageReference Include="ElasticApmSerilogIntegration" Version="1.8.1" />
+	  <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.0.0" />
+	  <PackageReference Include="GenericSolutionApi" Version="6.0.1" />
+	  <PackageReference Include="HealthCheckHelper" Version="1.2.1" />
+	  <PackageReference Include="MyBankIdentity" Version="1.3.12" />
+	  <PackageReference Include="Polly" Version="8.5.2" />
+	  <PackageReference Include="AutoMapper" Version="14.0.0" />
+	  <PackageReference Include="CSharpFunctionalExtensions" Version="3.6.0" />
+	  <PackageReference Include="MediatR" Version="12.5.0" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.15" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.15" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.15" />
+	  <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="5.0.1" />
+	  <PackageReference Include="RedLock.net" Version="2.3.2" />
+	  <PackageReference Include="Minio" Version="6.0.3" />
+	  <PackageReference Include="System.ServiceModel.Duplex" Version="6.0.*" />
+	  <PackageReference Include="System.ServiceModel.Federation" Version="6.0.*" />
+	  <PackageReference Include="System.ServiceModel.Http" Version="6.0.*" />
+	  <PackageReference Include="System.ServiceModel.NetTcp" Version="6.0.*" />
+	  <PackageReference Include="System.ServiceModel.Security" Version="6.0.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Templates\AsanFinanceConsent.docx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\PersonalDataConsent.docx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

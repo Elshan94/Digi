@@ -1,0 +1,10 @@
+variables:
+  MODULE: digitalsalaryservice
+  namespace: $CI_COMMIT_REF_NAME
+  CSPROJ: DigitalSalaryService
+  KEY: "maintainers_DigitalSalaryService_AZyJe1UfeR8croicZBDT"
+  DOCKERVERSION: "8"
+include:
+  - project: 'maintainers/K8s'
+    ref: dev # It is better to put tag here, keeping branch name only during active development phase.
+    file: 'pipeline.yml'
